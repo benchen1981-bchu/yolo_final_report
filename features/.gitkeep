@@ -1,0 +1,7 @@
+# BDD Feature Files
+
+This directory contains Gherkin feature files for Behavior-Driven Development:
+- vehicle_detection.feature - Vehicle detection scenarios
+- custom_object_detection.feature - Custom object detection behaviors
+- video_processing.feature - Video processing scenarios
+- model_training.feature - Model training behaviors
