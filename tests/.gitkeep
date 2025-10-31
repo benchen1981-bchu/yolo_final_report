@@ -1,0 +1,7 @@
+# TDD Test Suite
+
+This directory contains unit tests following Test-Driven Development:
+- test_model_loading.py
+- test_detection.py
+- test_custom_classes.py
+- test_video_processing.py
