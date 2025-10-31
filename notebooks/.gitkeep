@@ -1,0 +1,9 @@
+# CRISP-DM Notebooks
+
+This directory contains Jupyter notebooks following the CRISP-DM methodology:
+- Business Understanding
+- Data Understanding
+- Data Preparation
+- Modeling
+- Evaluation
+- Deployment
