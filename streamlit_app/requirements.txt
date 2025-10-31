@@ -1,0 +1,10 @@
+streamlit>=1.37.0
+ultralytics>=8.3.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+# Optional but recommended for performance / 可選但建議
+onnxruntime-gpu; platform_system == "Linux"
+onnxruntime; platform_system != "Linux"
+# If using CUDA-enabled PyTorch via ultralytics / 若要使用 CUDA 可在本機安裝對應 torch 版本
+# torch
+# torchvision
