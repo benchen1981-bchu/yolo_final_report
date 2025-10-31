@@ -1,0 +1,7 @@
+# SDD Specifications
+
+This directory contains specification documents for Specification-Driven Development:
+- model_specs.md - Model architecture and requirements
+- detection_specs.md - Detection algorithm specifications
+- custom_class_specs.md - Custom object class definitions
+- api_specs.md - API interface specifications
