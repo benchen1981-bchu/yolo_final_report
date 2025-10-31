@@ -11,6 +11,78 @@ This project implements a comprehensive vehicle detection system using the lates
 - **SDD**: Specification-Driven Development
 - **BDD**: Behavior-Driven Development
 
+## Project Structure
+
+The repository is organized following software development best practices:
+
+```
+yolo_final_report/
+├── notebooks/          # CRISP-DM methodology - Jupyter notebooks
+│   └── .gitkeep       # Business Understanding, Data Understanding,
+│                      # Data Preparation, Modeling, Evaluation, Deployment
+│
+├── tests/             # TDD methodology - Test-Driven Development
+│   └── .gitkeep       # Unit tests: test_model_loading.py, test_detection.py,
+│                      # test_custom_classes.py, test_video_processing.py
+│
+├── specs/             # SDD methodology - Specification-Driven Development
+│   └── .gitkeep       # Specifications: model_specs.md, detection_specs.md,
+│                      # custom_class_specs.md, api_specs.md
+│
+├── features/          # BDD methodology - Behavior-Driven Development
+│   └── .gitkeep       # Gherkin features: vehicle_detection.feature,
+│                      # custom_object_detection.feature, video_processing.feature,
+│                      # model_training.feature
+│
+├── streamlit_app/     # Streamlit demo application
+│   └── README.md      # TODO: app.py, requirements.txt, utils/, models/, config/
+│
+├── src/               # Source code (to be added)
+├── data/              # Datasets (to be added)
+├── models/            # Trained models (to be added)
+└── docs/              # Documentation and reports (to be added)
+```
+
+### Methodology Directories
+
+#### `notebooks/` - CRISP-DM
+Contains Jupyter notebooks following the CRISP-DM process:
+1. Business Understanding - Define project goals
+2. Data Understanding - Explore and analyze video data
+3. Data Preparation - Dataset preparation and annotation
+4. Modeling - YOLO model training and fine-tuning
+5. Evaluation - Performance metrics and validation
+6. Deployment - Production deployment strategies
+
+#### `tests/` - TDD (Test-Driven Development)
+Unit and integration tests ensuring code quality:
+- Model loading and initialization tests
+- Detection algorithm tests
+- Custom object class tests
+- Video processing pipeline tests
+
+#### `specs/` - SDD (Specification-Driven Development)
+Detailed technical specifications:
+- Model architecture specifications
+- Detection requirements and criteria
+- Custom object class definitions
+- API interface specifications
+
+#### `features/` - BDD (Behavior-Driven Development)
+Gherkin-style feature files describing behaviors:
+- Vehicle detection scenarios
+- Custom object detection behaviors
+- Video processing workflows
+- Model training behaviors
+
+#### `streamlit_app/` - Demo Application
+Interactive web application for demonstration:
+- Video upload and processing interface
+- Real-time detection visualization
+- Custom class configuration
+- Model training interface
+- Performance metrics dashboard
+
 ## Target Video
 
 Vehicle detection analysis on: https://www.youtube.com/watch?v=Bbv5V3FQc0A
@@ -20,8 +92,8 @@ Vehicle detection analysis on: https://www.youtube.com/watch?v=Bbv5V3FQc0A
 This project utilizes code and concepts from the following open-source repositories:
 
 ### 1. Ultralytics YOLO - Official Repository
-**Repository**: https://github.com/ultralytics/ultralytics
-**Purpose**: Core YOLO implementation, official models, and training framework
+**Repository**: https://github.com/ultralytics/ultralytics  
+**Purpose**: Core YOLO implementation, official models, and training framework  
 **Key Features**:
 - State-of-the-art YOLOv8 and YOLO11 models
 - Comprehensive training, validation, and inference capabilities
@@ -29,8 +101,8 @@ This project utilizes code and concepts from the following open-source repositor
 - Well-documented API and CLI interface
 
 ### 2. YOLOv8 Custom Object Detection
-**Repository**: https://github.com/mohammadamine99/YOLOv8-custom-object-detection
-**Purpose**: Guide for training custom object detection models
+**Repository**: https://github.com/mohammadamine99/YOLOv8-custom-object-detection  
+**Purpose**: Guide for training custom object detection models  
 **Key Features**:
 - Custom dataset preparation and annotation
 - Fine-tuning YOLO models for specific objects
@@ -38,8 +110,8 @@ This project utilizes code and concepts from the following open-source repositor
 - Model evaluation and optimization techniques
 
 ### 3. YOLOv8 Streamlit Detection and Tracking
-**Repository**: https://github.com/aparsoft/yolov8-streamlit-detection-tracking
-**Purpose**: Streamlit web interface for object detection and tracking
+**Repository**: https://github.com/aparsoft/yolov8-streamlit-detection-tracking  
+**Purpose**: Streamlit web interface for object detection and tracking  
 **Key Features**:
 - Interactive web-based detection interface
 - Real-time video processing
@@ -47,8 +119,8 @@ This project utilizes code and concepts from the following open-source repositor
 - User-friendly visualization
 
 ### 4. YOLOv8 Streamlit App
-**Repository**: https://github.com/ongaunjie1/YOLOv8-streamlit-app
-**Purpose**: Alternative Streamlit implementation for YOLO
+**Repository**: https://github.com/ongaunjie1/YOLOv8-streamlit-app  
+**Purpose**: Alternative Streamlit implementation for YOLO  
 **Key Features**:
 - Clean and simple UI design
 - Image and video upload support
@@ -56,8 +128,8 @@ This project utilizes code and concepts from the following open-source repositor
 - Configuration options for model parameters
 
 ### 5. YOLOv8 DeepSORT Streamlit
-**Repository**: https://github.com/monemati/YOLOv8-DeepSORT-Streamlit
-**Purpose**: Advanced tracking with DeepSORT algorithm
+**Repository**: https://github.com/monemati/YOLOv8-DeepSORT-Streamlit  
+**Purpose**: Advanced tracking with DeepSORT algorithm  
 **Key Features**:
 - YOLOv8 detection combined with DeepSORT tracking
 - Multi-object tracking with ID persistence
@@ -65,36 +137,13 @@ This project utilizes code and concepts from the following open-source repositor
 - Performance metrics and visualization
 
 ### 6. Vehicle Detection and Counter using YOLO11
-**Repository**: https://github.com/SrujanPR/Vehicle-Detection-and-Counter-using-Yolo11
-**Purpose**: Specific vehicle counting implementation with latest YOLO11
+**Repository**: https://github.com/SrujanPR/Vehicle-Detection-and-Counter-using-Yolo11  
+**Purpose**: Specific vehicle counting implementation with latest YOLO11  
 **Key Features**:
 - Vehicle detection and counting logic
 - YOLO11 integration
 - Traffic analysis capabilities
 - Real-time counting metrics
-
-## Project Structure
-
-```
-yolo_final_report/
-├── README.md                          # This file
-├── references/                        # Cloned reference repositories
-│   ├── ultralytics/
-│   ├── YOLOv8-custom-object-detection/
-│   ├── yolov8-streamlit-detection-tracking/
-│   ├── YOLOv8-streamlit-app/
-│   ├── YOLOv8-DeepSORT-Streamlit/
-│   └── Vehicle-Detection-and-Counter-using-Yolo11/
-├── src/                               # Source code
-├── models/                            # Trained models
-├── data/                              # Datasets and videos
-├── tests/                             # Test cases (TDD)
-├── specs/                             # Specifications (SDD)
-├── features/                          # Feature descriptions (BDD)
-├── notebooks/                         # Jupyter notebooks (CRISP-DM)
-├── streamlit_app/                     # Streamlit demo application
-└── docs/                              # Documentation and reports
-```
 
 ## Features
 
@@ -111,7 +160,7 @@ yolo_final_report/
 
 ```bash
 # Clone this repository
-git clone https://github.com/benchen1981/yolo_final_report.git
+git clone https://github.com/benchen1981-bchu/yolo_final_report.git
 cd yolo_final_report
 
 # Install dependencies
@@ -135,7 +184,7 @@ python src/detect.py --source data/videos/traffic.mp4 --weights models/best.pt
 streamlit run streamlit_app/app.py
 ```
 
-## Methodology
+## Methodology Implementation
 
 ### CRISP-DM Process
 1. **Business Understanding**: Vehicle detection for traffic analysis
@@ -163,18 +212,19 @@ streamlit run streamlit_app/app.py
 ## License
 
 This project integrates multiple open-source repositories. Please refer to individual repository licenses:
+
 - Ultralytics YOLO: AGPL-3.0 License
 - Other reference repositories: Check individual repository licenses
 
 ## Acknowledgments
 
 Special thanks to all the open-source contributors and repositories that made this project possible:
+
 - Ultralytics team for the excellent YOLO implementation
 - All reference repository authors for their valuable contributions
 - The open-source community for continuous support and innovation
 
 ## Contact
 
-Project maintained by: benchen1981@gmail.com
-
-Repository: https://github.com/benchen1981/yolo_final_report
+Project maintained by: benchen1981@gmail.com  
+Repository: https://github.com/benchen1981-bchu/yolo_final_report
